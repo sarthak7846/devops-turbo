@@ -1,0 +1,8 @@
+
+// POSTGRES DB CMD
+$ docker run -v vol_db:/var/lib/postgresql/data --network my-network -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres
+
+$ docker run -v vol_db --network my-network -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 --name postgres-db postgres
+
+// BE IMAGE BUILD CMD
+$ docker build -t be-1 -f docker/Dockerfile.backend .

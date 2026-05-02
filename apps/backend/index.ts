@@ -2,6 +2,7 @@ import { prisma } from 'db/client';
 import express from 'express';
 
 const app = express();
+const port = 8080;
 
 app.use(express.json());
 
@@ -37,6 +38,6 @@ app.post("/user", (req, res) => {
         });
 })
 
-app.listen(8080, () => {
-    console.log("Backend server running on http://localhost:8080")
+app.listen(port, () => {
+    console.log(`Backend server running on http://localhost:${port}`)
 });
