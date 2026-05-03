@@ -25,4 +25,4 @@ jobs:
           # build-args:
           #  - DATABASE_URL=${{secrets.DATABASE_URL}}
           push: true
-          tags: rickydocker3445/devops-turbo-backend:${{github.sha}}
+          tags: rickydocker3445/devops-turbo-frontend:${{github.sha}}

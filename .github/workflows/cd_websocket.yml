@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./docker/Dockerfile.ws
           push: true
-          tags: rickydocker3445/devops-turbo-backend:${{github.sha}}
+          tags: rickydocker3445/devops-turbo-websocket:${{github.sha}}
